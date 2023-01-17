@@ -2,6 +2,7 @@
 Generic version: raspberry pi3B/3B+ images available at sourceforge link
 
 For a general overview:  https://imonitorg.com/overview.pdf
+
 For a "manual" of imonitorg: https://imonitorg.com/QuickManualG.pdf
 
 Information about how to install/start this image:

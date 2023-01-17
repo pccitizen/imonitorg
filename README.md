@@ -15,10 +15,11 @@ obtained from Vilros. There is also absolutely no use of "arp spoofing" to inter
 Run "/root/clean_piG_files_generic" as root to clean all history at any time in /root via "./clean_piG_files_generic."
 /root/Top100WebSites.txt is primarily for US; you can modify this for other countries if you want -length must remain same!  
 "Pihole" is available via a link on the main rpi web page.  Change DNS server on your LAN or individual gadgets to point to the rpi and it will record all your DNS queries -log linked on rpi web page.
+
 1-20-2021: Run "raspi-config" to set TimeZone - it is set to US EST.
 6-26-2022: Setup gmail parameters to allow relay of daily email via your gmail account -on rpi web page.
 3-5-2022: MAKE SURE YOU WAIT a DAY to FLUSH OUT STATs, old config, a week to recycle host discovery.
-8-14-2022: Image copy error may cause tcppings to not appear for 1st day of use.  /root/RTTimetcpping.txt may have a binary character until cleared overnite. Simple ping results start ON the hour.
+8-14-2022: Image copy error may cause tcppings to not appear for 1st day of use.  
 
 11-11-2022: New 3B/3B+ jessie/stretch images. NOTE near realtime plot [5 min delay] of perf, linked on pi home page
  

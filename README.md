@@ -1,7 +1,7 @@
 # imonitorg
 Generic version: raspberry pi3B/3B+ images available at sourceforge link:  https://sourceforge.net/projects/imonitorg
 
-For a general overview:  https://imonitorg.com/overview.pdf
+Network performance monitoring; Local Network characterization. For a general overview:  https://imonitorg.com/overview.pdf
 
 For a "manual" of imonitorg: https://imonitorg.com/QuickManualG.pdf
 

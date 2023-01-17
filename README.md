@@ -14,7 +14,7 @@ obtained from Vilros. There is also absolutely no use of "arp spoofing" to inter
  
 Run "/root/clean_piG_files_generic" as root to clean all history at any time in /root via "./clean_piG_files_generic."
 /root/Top100WebSites.txt is primarily for US; you can modify this for other countries if you want -length must remain same!  
-"Pihole" is available via a link on the main rpi web page.  Change DNS server on your LAN or individual gadgets to point to the rpi and it will record all your DNS queries -log linked on rpi web page.
+"Pihole" is available via a link on the main rpi web page.  Change DNS server on your LAN or individual gadgets to point to the rpi and it will record all your DNS queries -log linked on rpi web page.  No filters are installed. 
 
 1-20-2021: Run "raspi-config" to set TimeZone - it is set to US EST.
 6-26-2022: Setup gmail parameters to allow relay of daily email via your gmail account -on rpi web page.

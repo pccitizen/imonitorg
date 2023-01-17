@@ -1,5 +1,5 @@
 # imonitorg
-Generic version: raspberry pi3B/3B+ images available at sourceforge link
+Generic version: raspberry pi3B/3B+ images available at sourceforge link https://sourceforge.net/projects/imonitorg
 
 For a general overview:  https://imonitorg.com/overview.pdf
 

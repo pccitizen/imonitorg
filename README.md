@@ -17,10 +17,10 @@ Run "/root/clean_piG_files_generic" as root to clean all history at any time in 
 "Pihole" is available via a link on the main rpi web page.  Change DNS server on your LAN or individual gadgets to point to the rpi and it will record all your DNS queries -log linked on rpi web page.  No filters are installed. 
 
 1-20-2021: Run "raspi-config" to set TimeZone - it is set to US EST.
+6-11-2021:latest pi0w image (buster): This contains an APN so you can find it on wifi [SSID "Browseto...";KEY is "password"], enter home SSID/KEY/gmail_info[opt]; vncserver enabled; email sent on bootup!;  NO NETWORK PERF monitoring sware --caution: it will boot into present state, so you must boot from/into APN/configure state [not from the "un-configured" -since there is no configuration!]
 6-26-2022: Setup gmail parameters to allow relay of daily email via your gmail account -on rpi web page.
 3-5-2022: MAKE SURE YOU WAIT a DAY to FLUSH OUT STATs, old config, a week to recycle host discovery.
 8-14-2022: Image copy error may cause tcppings to not appear for 1st day of use.  
 
-11-11-2022: New 3B/3B+ jessie/stretch images. NOTE near realtime plot [5 min delay] of perf, linked on pi home page
- 
-6-11-2021:latest pi0w image (buster): This contains an APN so you can find it on wifi [SSID "Browseto...";KEY is "password"], enter home SSID/KEY/gmail_info[opt]; vncserver enabled; email sent on bootup!;  NO NETWORK PERF monitoring sware --caution: it will boot into present state, so you must boot from/into APN/configure state [not from the "un-configured" -since there is no configuration!]
+2-24-2023: New 3B/3B+ jessie/stretch images. NOTE near realtime plot [5 min delay] of perf, linked on pi home page
+2-24-2023: A tcpdump script runs to detect off-network unsolicited TCP SYNs to pi. If you expect these, edit /root/rpimonitor_edits.sh to remove tcpdumps.  

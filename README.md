@@ -11,6 +11,8 @@ Information about how to install/start this image:
 
 A standard linux "gunzip/bunzip2/unxz" will unzip the .gz/.bz2/.xz file to a 32GB image.   Use dd or rpi-imager to burn image on a quality microSD card. It will come up running if you use ethernet connect to your router.  If you are wifi only, then connect up KVM, login default user and config wifi creds.  These images are standard raspberry pi3B/pi3B+ with default pi password.  All scripts run as pi or root.  Do not disturb the scripts or the cron files. Reburn the image to restore.  You are free to use the pi normally in other ways.
 
+Installation of the VM ova proceeds like any other VM.  The VM should run bridged to the host OS, and you must select host OS network adapter in the settings before launching the VM. 
+
 There is absolutely no connection to cloud servers in this generic imonitorg software [other than those in the original pi3B[+] distributions].  Some of the scripts/names/crons have remnant names suggesting this due to its development across 26 users in different ISPs across the US. These are original jessie[stretch] distributions, updated at one or more times, and uses a noobs disk structure with a recovery partition.  Originally 
 obtained from Vilros. There is also absolutely no use of "arp spoofing" to intercept any traffic from any other devices on your network.  
  

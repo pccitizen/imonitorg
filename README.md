@@ -1,9 +1,11 @@
 # imonitorg
-Generic version: raspberry pi3B/3B+ images available at sourceforge link:  https://sourceforge.net/projects/imonitorg
+Generic version: raspberry pi3B/3B+ images available at sourceforge link:  https://sourceforge.net/projects/imonitorg 
+NEW 5-2023: VM "ova" image created using ubuntu 22.04 OS.  Tested with Oracle VirtualBox on win10, rocky, centos8 linux. 
 
 Network performance monitoring; Local Network characterization. For a general overview:  https://imonitorg.com/overview.pdf
 
-For a "manual" of imonitorg: https://imonitorg.com/QuickManualG.pdf
+For a "manual" of imonitorg for raspberry pi: https://imonitorg.com/QuickManualG.pdf
+For a "manual" of imonitorg ubuntu VM ova: https://imonitorg.com/vboxQuickManualG.pdf
 
 Information about how to install/start this image:
 

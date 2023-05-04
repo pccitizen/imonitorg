@@ -27,4 +27,5 @@ Run "/root/clean_piG_files_generic" as root to clean all history at any time in 
 8-14-2022: Image copy error may cause tcppings to not appear for 1st day of use.  
 
 2-24-2023: New 3B/3B+ jessie/stretch images. NOTE near realtime plot [5 min delay] of perf, linked on pi home page
-2-24-2023: A tcpdump script runs to detect off-network unsolicited TCP SYNs to pi. If you expect these, edit /root/rpimonitor_edits.sh to remove tcpdumps.  
+2-24-2023: A tcpdump script runs to detect off-network unsolicited TCP SYNs to pi. If you expect these, edit /root/rpimonitor_edits.sh to remove tcpdumps. 
+5-2023: VM ubuntu 22.04 ova image available, tested with VirtualBox on win10, rocky, centos8 linux. 

@@ -7,7 +7,9 @@ Network performance monitoring; Local Network characterization. For a general ov
 IOT network snoop: Packet capture and analysis of IOT devices uses wifi wlan0 APN of pi4
 
 For a "manual" of imonitorg for raspberry pi: https://imonitorg.com/QuickManualG.pdf
+
 For a "manual" of imonitorg ubuntu VM ova: https://imonitorg.com/vboxQuickManualG.pdf
+
 For a "manual" of iotsnoop [for raspberry pi4]: https://iotsnoop.com/iotsnoopQuickManual.pdf
 
 Installation of the VM ova proceeds like any other VM.  The VM should run bridged to the host OS, and you must select host OS network adapter in the settings before launching the VM. 

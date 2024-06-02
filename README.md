@@ -1,18 +1,3 @@
-# imonitorg/iotsnoop
-Generic version: raspberry pi3B/3B+/4B images available at sourceforge link:  https://sourceforge.net/projects/imonitorg 
-NEW 5-2023: VM "ova" image created using ubuntu 22.04 OS.  Tested with Oracle VirtualBox on win10, rocky, centos8 linux. 
-NEW 4-2024: "IOTsnoop" pi4 32bit images.  Monitor your IOT network
-
-Network performance monitoring; Local Network characterization. For a general overview:  https://imonitorg.com/overview.pdf
-IOT network snoop: Packet capture and analysis of IOT devices uses wifi wlan0 APN of pi4
-
-For a "manual" of imonitorg for raspberry pi: https://imonitorg.com/QuickManualG.pdf
-
-For a "manual" of imonitorg ubuntu VM ova: https://imonitorg.com/vboxQuickManualG.pdf
-
-For a "manual" of iotsnoop [for raspberry pi4]: https://iotsnoop.com/iotsnoopQuickManual.pdf
-
-Installation of the VM ova proceeds like any other VM.  The VM should run bridged to the host OS, and you must select host OS network adapter in the settings before launching the VM. 
 
 GENERAL:
 See https://imonitorg.com for general information  https://iotsnoop for early iotsnoop info
@@ -42,13 +27,14 @@ echo <key> > DEFgmailAUTH.txt  [this must be special obtained from gmail.  See h
 echo <email address to send to> > DEFgmailULTIMATE.txt
 
 pi4B/iotsnoop:
-UPDATE 3-26-2024: 
-This is a beta version1, using 64GB SDcard. 32bit pi4. Feedback Needed!  Transition to USB/SSD needed for long term, write intensive! 
+UPDATE 5-12-2024: version 1.31 posted I used "bunzip2 -c SDcard64GB-jdloop-iotsnoop5-12-2024.img.bz2 | dd of=/dev/sde bs=8MB status=progress [caution: use Your /dev/"sd?"]  
+NOTE: NO data will appear until an hour is crossed and analysis performed.  It will accumulate thereafter.  As root "./clean_iotsnoop_files" to reinitialize.  Remember this is long term msmts!  
+This is a beta version, using 64GB SDcard. 32bit pi4. Write intensive! Feedback Needed!  USB boot enabled.  Do rpi-clone sd[a|b] to create ssd on usd.  
 Must be connected to ethernet interface on router or downstream switch.  Wifi wlan0 is dedicated APN.  
 To use for imonitorg only function [like 3B, 3B+ images above], as root "echo NO > DEFfindiothosts.txt" -NO IOT functions performed. Wifi APN is still functional. 
 For iotsnoop, use is traffic sensitive.  4GB pi4 is recommended for 20+ IOT devices; 1GB pi4 can probably function for <10.
-Do NOT put streaming devices, like smart TVs, Dish/DirecTV [these use Internet for streaming] on wifi. Packet capture is capped at 1-2GB/hr. Reset/restart each hour.
-Traffic capability is 2GB packet collection/hr, about 6 Mb/s average total [rcv+tmt]
+Do NOT put streaming devices, like smart TVs, Dish/DirecTV [these use Internet for streaming] on wifi. Packet capture is capped at 2GB/hr. Reset/restart each hour.
+Traffic capability is 2GB packet collection/hr, about 6 Mb/s average total [rcv+tmt]. 4K streaming will saturate at ~30 minutes. 
 Wifi is constrained to 802.11g -50Mb/s [why would you want your IOT stealing your bandwidth!!]
 iotsnoop pi4B image turns the wifi into an APN so you can accept IOT logins, and monitor them. Default SSID/KEY is iotsnoopg/iotsnoop
 Web interface shows IOT plots/statistics.  See webpage below for more info.
@@ -57,9 +43,6 @@ Iotsnoop performs LONGER term measurements. You must wait hours/days to see plot
 You can set iotsnoop APN passwd/key manually as root by editting the /etc/hostapd/hostapd.conf file [or use default]
 You can set iotsnoop gmail parameters on iotsnoop web interface.  Receive daily email.
 See https://iotsnoop.com for initial information, representative plots/stats/info
-"Version1.1" will contain improvements! and corrections! 
-NOTE: 3-21-2024: iotsnoop has problem with imonitorg ping timeouts, will fix next image
-NOTE: 3-21-2024: iotsnoop tries usb boot, times out, usb boot, and then SDcard
 
 Oracle VirtualBox ova images:
 Oracle VirtualBox "ova" image uses Ubuntu OS 22.04 generic base. Tested on rocky8 linux, centos8 and win10 Oracle VirtualBox hypervisor.
@@ -82,4 +65,19 @@ you can add your own IPs to this list, or create the file yourself.  Make a cron
 5-19-2023: If your ISP is CGNAT, as root: "echo YES > DEFcgnat.txt" to avoid IP change alerts
 MAKE SURE YOU WAIT a DAY to FLUSH OUT STATs, OLD PLOTS, old config, a week to recycle host discovery.  The emphasis is on "long-term" statistics, not minute to minute.
 3-20-2024: pi4B/iotsnoop images --see https://iotsnoop.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(END)
 

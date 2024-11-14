@@ -1,5 +1,5 @@
 GENERAL:
-See https://imonitorg.com for general information  https://iotsnoop for early iotsnoop info
+See https://imonitorg.com for general information There is a link to iotsnoop.html for more detailed iotsnoop info.
 A standard linux "gunzip/bunzip2/unxz" will unzip the .gz/.bz2/.xz file to a 32GB image.  You will need zip tools on windows [7-zip].....  
 Burn it with any image creation tool [incl "dd"]. Win32DiskImager or rpiimager or balenaEtcher will work.
 using linux: "gunzip|bunzip2 -c 32GBjdloop-pi3B[plus]X-Y-2024.img.[gz|bz2] | dd of=/dev/sd[c,d,drive e.g.-your usb carrier with microSD] bs=8MB status=progress"  e.g. to write to microSD card 
@@ -27,6 +27,7 @@ echo <email address to send to> > DEFgmailULTIMATE.txt
 
 pi4B/iotsnoop:  USE https://imonitorg.com/iotsnoop.html to track any changes/edits to existing version
 IN GENERAL: using pi4 iotsnoop in APN mode is less capable than routers for wifi strength and power.  Can use an extender for range extension and only IOT [no streaming devices]
+UPDATE 11-1-2024: version 4.5 corrections, IOT device count plot, DHCP lease archive, lease changed to 1 hr.
 UPDATE 10-15-2024: Version 4.4 several corrections, detect loss of tmt power, dhcp changed to 1 day lease, APN defaults to 2.4 GHz [changable to 5GHz]
 UPDATE 9-9-2024: Version 4.3 several corrections, some bogus data displayed at start, will clear. APN is running 5GHz, NOT 2.4 as stated.  Options for 5/2.4 next version
 UPDATE 8-15-2024: Version 4.2 plot corrections, access to full IOT pcap for last hour!
@@ -35,13 +36,13 @@ UPDATE 8-6-2024 Version 4.1 BOGUS DATA displayed- will clear eventually [having 
 UPDATE 8-4-2024: Version 4.0 -PULLED- https://iotsnoop.com/iotsnoop.html tracks changes, improvements
 UPDATE 8-4-2024: Version 3.1 is assigning gateway as DNS for IOT. This is correct, but GUI is misleading -DNS assignment is for iotsnoop pi4!  corrected version 4
 UPDATE 8-4-2024: Version 4 is coming.  Wait for it.  Selected IOT packet statistics/port/DNS available!! on-net<->on-net traffic, non-dhcp users stats
-UPDATE 6-18-2024: version 3.1 is posted.  I have added a mapping feature which maps IOT contacts[DNS queries] from a selected IOT. Other bugfixes.  I think I am finally reaching a version which I can call stable!!!
+UPDATE 6-18-2024: version 3.1 is posted.  I have added a mapping feature which maps IOT contacts[DNS queries] from a selected IOT. Other bugfixes.  
 UPDATE 5-12-2024: version 1.31 posted I used "bunzip2 -c SDcard64GB-jdloop-iotsnoop5-12-2024.img.bz2 | dd of=/dev/sde bs=8MB status=progress [caution: use Your /dev/"sd?"]  
 NOTE: NO data will appear until an hour is crossed and analysis performed.  It will accumulate thereafter.  As root "./clean_iotsnoop_files" to reinitialize.  Remember this is long term msmts!  
 This is a beta version, using 64GB SDcard. 32bit pi4. Write intensive! Feedback Needed!  USB boot enabled.  Do rpi-clone sd[a|b] to create ssd on usd.  
 Must be connected to ethernet interface on router or downstream switch.  Wifi wlan0 is dedicated APN.  
 To use for imonitorg only function [like 3B, 3B+ images above], as root "echo NO > DEFfindiothosts.txt" -NO IOT functions performed. Wifi APN is still functional. 
-For iotsnoop, use is traffic sensitive.  4GB pi4 is recommended for 20+ IOT devices; 1GB pi4 can probably function for <10.
+For iotsnoop, use is traffic sensitive.  4GB pi4 is recommended for 20+ IOT devices; 1GB pi4 can probably function for <10, esp with no streaming [TVs, etc]
 Do NOT put streaming devices, like smart TVs, Dish/DirecTV [these use Internet for streaming] on wifi. Packet capture is capped at 2GB/hr. Reset/restart each hour.
 Traffic capability is 2GB packet collection/hr, about 6 Mb/s average total [rcv+tmt]. 4K streaming will saturate at ~30 minutes. 
 Wifi is constrained to 802.11g -50Mb/s [why would you want your IOT stealing your bandwidth!!]
